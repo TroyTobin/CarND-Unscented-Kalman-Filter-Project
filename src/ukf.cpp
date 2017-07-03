@@ -44,27 +44,27 @@ UKF::UKF()
 
   // Process noise standard deviation longitudinal acceleration in m/s^2
   // Value from "Augmentation Assignment 2" lecture
-  StdA_ = 0.2;
+  StdA_ = 0.75;
   //std_a_ = 0.2;
 
   // Process noise standard deviation yaw acceleration in rad/s^2
   // Value from "Augmentation Assignment 2" lecture
-  StdYawdd_ = 0.2;
+  StdYawdd_ = 0.75;
 
   // Laser measurement noise standard deviation position1 in m
-  StdLasPx_ = 0.15;
+  StdLasPx_ = 0.1;
 
   // Laser measurement noise standard deviation position2 in m
-  StdLasPy_ = 0.15;
+  StdLasPy_ = 0.1;
 
   // Radar measurement noise standard deviation radius in m
-  StdRadR_ = 0.3;
+  StdRadR_ = 0.2;
 
   // Radar measurement noise standard deviation angle in rad
   StdRadPhi_ = 0.03;
 
   // Radar measurement noise standard deviation radius change in m/s
-  StdRadRd_ = 0.2;
+  StdRadRd_ = 0.75;
 }
 
 UKF::~UKF() {}
